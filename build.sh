@@ -21,8 +21,8 @@ IMAGES=(
   redis
 )
 
-if [[ -z "$@" ]]; then
-  IMAGES="$@"
+if [[ "$@" ]]; then
+  IMAGES=("$@")
 fi
 
 nope() {

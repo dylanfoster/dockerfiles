@@ -5,6 +5,9 @@ RUN adduser -D -u 1000 vader
 RUN mkdir -p /data
 RUN mkdir -p /config/init
 
+RUN apk --update add git && \
+  rm -rf /var/cache/apk/*
+
 COPY docker-entrypoint.sh /
 COPY config /config
 

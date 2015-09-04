@@ -17,6 +17,7 @@ IMAGES=(
   alpine
   nginx
   node
+  node-dev
   postgres
   redis
 )
